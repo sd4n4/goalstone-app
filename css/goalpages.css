@@ -72,7 +72,7 @@ fieldset {
 }
 
 legend {
-    color: #97B3AE;
+    color: black;
     font-size: 1.5em;
     font-weight: 700;
     font-size: 2em;
@@ -114,7 +114,51 @@ input[type="text"] {
 .button:hover {
     background-color: white;
     color: #97B3AE;
+}
 
+.card {
+    font-family: 'Montserrat';
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #F0DDD6;
+    border-radius: 50px;
+    background-color: #F0DDD6;
+    margin-left: 2em;
+}
+
+.card h2{
+    background-color: #f2c3b9;
+    border: 1px solid #f2c3b9;
+    padding:0.5em;
+    border-radius: 50px;
+}
+
+.card #timeframe{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.card #steps{
+    background-color: white;
+    border: 1px solid white;
+    padding:0.5em;
+    border-radius: 50px;
+}
+
+.deleteButton {
+    background-color: #97B3AE;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.deleteButton:hover {
+    background-color: white;
+    color: #97B3AE;
 }
 
 
