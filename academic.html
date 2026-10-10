@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="goalSubmission.js" defer></script>
     <title>Goalstone App</title>
 </head>
 <body>
-    <body>
     <header> <!--Header including name and nav links-->
         <h2></h2> 
         <nav>
@@ -24,20 +24,21 @@
         </nav>
     </header>
     <aside>
-        <form method="GET">
+        <form id= "goalForm" method="GET">
             <fieldset>
                 <legend>ADD GOAL</legend>
                 <div>
-                    <input type="text" name="title" placeholder="Goal Title" required>
+                    <input id="title"type="text" name="title" placeholder="Goal Title" required>
                 </div>
                 <div>
-                    <input type="text" name="time" list="times" value="" required placeholder="Enter time frame"> <br>
+                    <input id="time"type="text" name="time" list="times" value="" required placeholder="Enter time frame"> <br>
                     <datalist id="times">
                         <option value="10 years">
                         <option value="5 years">
                         <option value="1 year">
                         <option value="1 month">
                     </datalist>
+                </div>
                 <div id="button">
                     <input type="submit" class="button" value="GENERATE ROADMAP"> 
                     <input type="reset" class="button" value="CLEAR">
@@ -45,5 +46,8 @@
             </fieldset>
         </form>
     </aside>
+    <article>
+        <div id="roadmap"></div>
+    </article>
     </body>
     </html>
