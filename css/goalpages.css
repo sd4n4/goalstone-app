@@ -2,7 +2,7 @@ body{
     display: grid;
     grid-template-areas: 
     'header header header header'
-    'section section section section';
+    'article article article aside';
     gap:1em;
     background-color: #f0eeea;
     margin:0;
@@ -48,3 +48,73 @@ a:hover{
     color:#97B3AE;
     text-decoration: none;
 }
+
+
+aside{
+    grid-area: aside;
+}
+
+form{
+    margin-right:2em;
+}
+
+/* Form */
+form {
+    background-color: #F0DDD6;
+    padding: 2em;
+    border: 1px solid #F0DDD6;
+    border-radius: 50px;
+}
+
+fieldset {
+    border: none;
+    background-color: #F0DDD6;
+}
+
+legend {
+    color: #97B3AE;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.button {
+    flex: 1;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    background-color: #97B3AE;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.75em;
+    margin-top: 1em;
+}
+.button:hover {
+    background-color: white;
+    color: #97B3AE;
+
+}
+
+
