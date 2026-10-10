@@ -45,7 +45,6 @@ nav ul a{
 }
 
 a:hover{
-    text-decoration: underline;
     color:#97B3AE;
     text-decoration: none;
 }
