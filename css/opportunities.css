@@ -2,25 +2,30 @@ body {
     display: grid;
     grid-template-areas:
         'header header header header'
-        'hero hero hero hero'
+        'bubble bubble bubble bubble'
         'main main main main'
         'controls controls controls controls';
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     background-color: #F0EEEA;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
-.hero{
-    grid-area: hero;
+.bubble{
+    grid-area: bubble;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2em auto;
+    border: 1px solid #F0DDD6;
+    border-radius: 50px;
+    background-color: #F0DDD6;
+    text-align: center;
     padding: 2em;
+    margin-bottom: 2em;
 }
 
 h2 {
@@ -28,44 +33,37 @@ h2 {
     margin: 0;
 }
 
-img {
+img{
     display: block;
     width: 80px;
     height: 80px;
+    padding:0;
     object-fit: contain;
-    padding: 0;
-}
+} 
 
-/* SECTION 2: Nav */
 
 header {
-    font-size: 1.3em;
+   font-size: 1.3em;
     grid-area: header;
     background-color: #F0DDD6;
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
+    align-items: end;
 }
 
-.logo img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
 
 .controls{
     grid-area: controls;
 }
 nav ul {
     display: flex;
-    list-style: none;
+    list-style:none;
     gap: 2em;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
+    font-family: 'Montserrat';
+    padding:0em;
+    margin-right:1em;
+    margin-top:1em;
+    font-weight:bold;
 }
 
 nav ul a {
@@ -78,7 +76,6 @@ nav ul a:hover {
     text-decoration: none;
 }
 
-
 .container {
     grid-area: main;
     width: 90%;
@@ -86,15 +83,6 @@ nav ul a:hover {
     margin: 1em;
     margin-top:0;
 
-}
-
-.hero {
-    border: 1px solid #F0DDD6;
-    border-radius: 50px;
-    background-color: #F0DDD6;
-    text-align: center;
-    padding: 2em;
-    margin-bottom: 3em;
 }
 
 .next_step {
@@ -155,10 +143,6 @@ nav ul a:hover {
     line-height: 1.6;
 }
 
-#resultCount {
-    font-weight: bold;
-    font-size: 0.9em;
-}
 
 .controls {
     display: flex;
@@ -196,32 +180,10 @@ nav ul a:hover {
     cursor: pointer;
 }
 
-.filter:hover,
-.filter.active {
+.filter:hover {
     background-color: #97B3AE;
     border-color: #97B3AE;
     color: white;
-}
-
-.opp_cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5em;
-}
-
-.card {
-    background-color: white;
-    border: 1px solid #D6CBBF;
-    border-radius: 25px;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    min-height: 260px;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    transition: transform 0.2s ease;
 }
 
 .category {
